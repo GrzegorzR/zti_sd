@@ -23,7 +23,8 @@ public class Application implements CommandLineRunner {
 		//repository.deleteAll();
 
 		// save a couple of customers
-		repository.save(new Customer("Kowalski", "Krakow", "kowalisk@mail","6666666"));
+	  	repository.save(new Customer("Nowak", "Krakow", "nowak@mail","1988123"));
+	  	repository.save(new Customer("Nowak", "Warszawa", "prawilny13@mail","54321376"));
 		
   }
 }
