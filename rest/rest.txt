@@ -1,0 +1,39 @@
+
+
+
+
+
+
+ POST http://localhost:9080/zti_1/customer/
+
+
+    {"city" : "Warszawa",
+    "email" : "nowak12@costam.com",
+    "name" : "Nowak",
+    "tel" : "123331"}
+
+    {"city" : "Krakow",
+    "email" : "nowak1@mail.com",
+    "name" : "Nowak",
+    "tel" : "1112333"}
+
+    {"city" : "Smith",
+    "email" : "London",
+    "name" : "asd@asd",
+    "tel" : "99123"}
+
+    {"city" : "Krawczyk",
+    "email" : "kr@mail",
+    "name" : "drr@",
+    "tel" : "12333"}
+
+    {"city" : "Krakow",
+    "email" : "Ng",
+    "name" : "asd",
+    "tel" : "12333"}
+
+    {"city" : "Baltimore",
+    "email" : "mc@gov.com",
+    "name" : "McNulty",
+    "tel" : "997"}
+
