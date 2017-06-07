@@ -13,7 +13,7 @@ import org.springframework.boot.SpringApplication;
 
 
 @SpringBootApplication
-public class Application extends SpringBootServletInitializer implements WebApplicationInitializer{
+public class Application implements CommandLineRunner {
 
 	@Autowired
 	private CustomerRepository repository;
@@ -45,10 +45,7 @@ public class Application extends SpringBootServletInitializer implements WebAppl
 		System.out.println("repository.findByNameAndCity(\"Nowak\", \"Krakow\"):");
 		printCustomersList(repository.findByNameAndCity("Nowak", "Krakow"));
 		
-		
-		
-		
-		//System.exit(0);
+		System.exit(0);
 
   }
   

@@ -23,6 +23,5 @@ public interface CustomerRepository extends CrudRepository<Customer, Long> {
 	 public List<Customer> findByOrderByTelAnnotation(@Param("searchName") String searchName);
 	 
 	 @Query("SELECT c FROM Customer c WHERE c.name = :searchName AND c.city = :searchCity")
-	 public List<Customer> findByNameAndCityAnnotation(@Param("searchName") String searchName,
-			 										   @Param("searchCity") String searchCity);
+	 public List<Customer> findByNameAndCityAnnotation(@Param("searchName") String searchName, @Param("searchCity") String searchCity);
 }

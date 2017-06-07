@@ -1,8 +1,6 @@
 
 
-
-
-
+1. Dodawanie wpisów do bazy, każdy wpis osobno.
 
  POST http://localhost:9080/zti_1/customer/
 
@@ -36,4 +34,23 @@
     "email" : "mc@gov.com",
     "name" : "McNulty",
     "tel" : "997"}
+
+
+2. Wyświetlanie wszystkich rekordów:
+
+GET http://localhost:9080/zti_sd/customer/
+
+
+3. Wyświetlanie pojedynczego rekordu:
+
+GET http://localhost:9080/zti_sd/customer/id
+
+
+4. Wyświetlanie listy dostępnych funkcji:
+
+GET http://localhost:9080/zti_sd/customer/search
+
+
+
+
 

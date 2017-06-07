@@ -13,7 +13,7 @@ import org.springframework.boot.SpringApplication;
 
 
 @SpringBootApplication
-public class Application implements CommandLineRunner {
+public class Application extends SpringBootServletInitializer implements WebApplicationInitializer{
 
 	@Autowired
 	private CustomerRepository repository;
@@ -23,32 +23,6 @@ public class Application implements CommandLineRunner {
   }
   
   public void run(String... args) throws Exception {
-
-	  	System.out.println("Dodawanie do bazy");
-		repository.save(createCustomersList());
-		
-		System.out.println("");
-		System.out.println("repository.getAll():");
-		printCustomersList(repository.findAll());
-		
-		
-		System.out.println("");
-		System.out.println("repository.getAll():");
-		printCustomersList(repository.findAll());
-		
-		System.out.println("");
-		System.out.println("repository.findByName(\"Nowak\"):");
-		printCustomersList(repository.findByName("Nowak"));
-		
-
-		System.out.println("");
-		System.out.println("repository.findByNameAndCity(\"Nowak\", \"Krakow\"):");
-		printCustomersList(repository.findByNameAndCity("Nowak", "Krakow"));
-		
-		
-		
-		
-		System.exit(0);
 
   }
   
